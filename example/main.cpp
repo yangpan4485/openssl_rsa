@@ -29,6 +29,7 @@ jtLOU5iBl0qtz6RH0d12E4NlOw24vHagwTq3GNL5p0olefVI11SLa9NJpdc7WR7j\n\
 SjLcXRy1Q3wpLtSRBAoo0K6GdiJnjEwH1WC1csWO54I=\n\
 -----END RSA PRIVATE KEY-----\n";
 
+    // Windows下需要更换文件位置
     std::string pub_filename = "./rsa_public_key.pem";
     std::string pri_filename = "./rsa_private_key.pem";
 
@@ -86,5 +87,7 @@ SjLcXRy1Q3wpLtSRBAoo0K6GdiJnjEwH1WC1csWO54I=\n\
     std::cout << DecryptByPrikeyString(data.data(), data.size(), private_key)
               << std::endl;
 
+
+    getchar();
     return 0;
 }
